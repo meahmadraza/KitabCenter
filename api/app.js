@@ -1,7 +1,8 @@
 const express = require('express');
-const serverless = require('serverless-http'); // required for Vercel
+const serverless = require('serverless-http');
 const bodyParser = require('body-parser');
 const session = require("express-session");
+const path = require("path");
 const {
     getAllBooks,
     addUser,
@@ -9,14 +10,15 @@ const {
     addInCart,
     getCartData,
     deleteFromCart
-} = require('../public/operations'); // Adjust path since this will live in /api now
+} = require('../public/operations'); // Adjust path as needed
 
 const app = express();
-
 let userLoggedIn = false;
 let loginUser = {};
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "../views")); // ✅ Important for Vercel
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
     secret: 'your_secret_key',
@@ -25,7 +27,7 @@ app.use(session({
     cookie: { secure: false }
 }));
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, "../public"))); // ✅ Static files
 
 // Routes
 app.get('/', (req, res) => {
@@ -114,6 +116,5 @@ app.get('/logout', (req, res) => {
     res.redirect('/');
 });
 
-// No app.listen here! Instead:
 module.exports = app;
-module.exports.handler = serverless(app); // Required for Vercel
+module.exports.handler = serverless(app);
