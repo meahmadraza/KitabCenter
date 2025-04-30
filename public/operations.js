@@ -2,13 +2,13 @@ const fs = require('fs');
 const { Module } = require('module');
 
 function getAllBooks() {
-    const books = JSON.parse(fs.readFileSync('books.json')).books;
+    const books = JSON.parse(fs.readFileSync(path.join(__dirname, 'books.json'))).books;
     return books;
 }
 
 
 function addUser(name, username, password) {
-    const usersData = JSON.parse(fs.readFileSync('users.json'));
+    const usersData = JSON.parse(fs.readFileSync(path.join(__dirname, 'users.json')));
     if (usersData.users.find(user => user.username === username)) {
         console.log("User already exists");
     } else {
@@ -19,7 +19,7 @@ function addUser(name, username, password) {
 }
 
 function checkPassword(username, password) {
-    const users = JSON.parse(fs.readFileSync('users.json')).users;
+    const users = JSON.parse(fs.readFileSync(path.join(__dirname, 'users.json'))).users;
 
     const user = users.find(user => user.username === username);
     if (user && user.password === password) {
@@ -31,7 +31,7 @@ function checkPassword(username, password) {
 
 function addInCart(bookId, username) {
 
-    const cartData = JSON.parse(fs.readFileSync('Cart.json'));
+    const cartData = JSON.parse(fs.readFileSync(path.join(__dirname, 'Cart.json')));
 
     if (cartData[username]) {
         cartData[username].push({ bookId });
@@ -44,12 +44,12 @@ function addInCart(bookId, username) {
 }
 
 function getCartData() {
-    const cart = JSON.parse(fs.readFileSync('cart.json'));
+    const cart = JSON.parse(fs.readFileSync(path.join(__dirname, 'cart.json')));
     return cart;
 }
 
 function deleteFromCart(bookId, username) {
-    const cartData = JSON.parse(fs.readFileSync('cart.json'));
+    const cartData = JSON.parse(fs.readFileSync(path.join(__dirname, 'cart.json')));
 
     if (cartData[username]) {
 
