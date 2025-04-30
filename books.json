@@ -1,0 +1,517 @@
+{
+    "books": [
+        {
+            "book_id": 1,
+            "book_name": "To Kill a Mockingbird",
+            "author_name": "Harper Lee",
+            "price": 7.19,
+            "img_link": "/books_images/To Kill a Mockingbird.jpeg",
+            "book_type": "Fiction",
+            "description": "A novel about the serious issues of rape and racial inequality."
+        },
+        {
+            "book_id": 2,
+            "book_name": "A Brief History of Time",
+            "author_name": "Stephen Hawking",
+            "price": 10.17,
+            "img_link": "/books_images/A Brief History of Time.jpeg",
+            "book_type": "Science",
+            "description": "An overview of cosmology from the Big Bang to black holes."
+        },
+        {
+            "book_id": 3,
+            "book_name": "The Great Gatsby",
+            "author_name": "F. Scott Fitzgerald",
+            "price": 9.89,
+            "img_link": "/books_images/The Great Gatsby.jpeg",
+            "book_type": "Classic",
+            "description": "A novel set in the Jazz Age that critiques the American dream."
+        },
+        {
+            "book_id": 4,
+            "book_name": "The Catcher in the Rye",
+            "author_name": "J.D. Salinger",
+            "price": 8.99,
+            "img_link": "/books_images/The Catcher in the Rye.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about teenage alienation and rebellion."
+        },
+        {
+            "book_id": 5,
+            "book_name": "The Subtle Art of Not Giving a F*ck",
+            "author_name": "Mark Manson",
+            "price": 14.99,
+            "img_link": "/books_images/The Subtle Art of Not Giving a Fck.jpeg",
+            "book_type": "Motivational",
+            "description": "A counterintuitive approach to living a good life by focusing on what truly matters."
+        },
+        {
+            "book_id": 6,
+            "book_name": "Becoming",
+            "author_name": "Michelle Obama",
+            "price": 11.89,
+            "img_link": "/books_images/Becoming.jpeg",
+            "book_type": "Science",
+            "description": "A memoir by the former First Lady of the United States."
+        },
+        {
+            "book_id": 7,
+            "book_name": "The Hobbit",
+            "author_name": "J.R.R. Tolkien",
+            "price": 8.99,
+            "img_link": "/books_images/The Hobbit.jpeg",
+            "book_type": "Fantasy",
+            "description": "A fantasy novel about the quest to reclaim a lost kingdom."
+        },
+        {
+            "book_id": 8,
+            "book_name": "The Book Thief",
+            "author_name": "Markus Zusak",
+            "price": 12.99,
+            "img_link": "/books_images/The Book Thief.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about a young girl in Nazi Germany who finds solace in stealing books."
+        },
+        {
+            "book_id": 9,
+            "book_name": "Drive: The Surprising Truth About What Motivates Us",
+            "author_name": "Daniel H. Pink",
+            "price": 12.99,
+            "img_link": "/books_images/The Surprising Truth About What Motivates Us.jpeg",
+            "book_type": "Motivational",
+            "description": "A look at what truly motivates people and how to harness that motivation."
+        },
+        {
+            "book_id": 10,
+            "book_name": "Moby Dick",
+            "author_name": "Herman Melville",
+            "price": 11.99,
+            "img_link": "/books_images/Moby Dick.jpeg",
+            "book_type": "Classic",
+            "description": "A whaling voyage that explores themes of revenge and humanity."
+        },
+        {
+            "book_id": 11,
+            "book_name": "Harry Potter and the Sorcerer's Stone",
+            "author_name": "J.K. Rowling",
+            "price": 10.99,
+            "img_link": "/books_images/Harry Potter and the Sorcerer's Stone.jpeg",
+            "book_type": "Fantasy",
+            "description": "A young boy discovers he is a wizard and attends a magical school."
+        },
+        {
+            "book_id": 12,
+            "book_name": "The Da Vinci Code",
+            "author_name": "Dan Brown",
+            "price": 9.99,
+            "img_link": "/books_images/The Da Vinci Code.jpeg",
+            "book_type": "Thriller",
+            "description": "A symbologist uncovers a conspiracy hidden in famous artworks."
+        },
+        {
+            "book_id": 13,
+            "book_name": "The Girl on the Train",
+            "author_name": "Paula Hawkins",
+            "price": 12.99,
+            "img_link": "/books_images/The Girl on the Train.jpeg",
+            "book_type": "Thriller",
+            "description": "A woman becomes entangled in a missing persons investigation."
+        },
+        {
+            "book_id": 14,
+            "book_name": "Gone Girl",
+            "author_name": "Gillian Flynn",
+            "price": 11.99,
+            "img_link": "/books_images/Gone Girl.jpeg",
+            "book_type": "Thriller",
+            "description": "A wife goes missing on her fifth wedding anniversary, and her husband becomes the prime suspect."
+        },
+        {
+            "book_id": 15,
+            "book_name": "Memoirs of a Geisha",
+            "author_name": "Arthur Golden",
+            "price": 8.99,
+            "img_link": "/books_images/Memoirs of a Geisha.jpeg",
+            "book_type": "Fiction",
+            "description": "A fictional autobiography of a geisha working in Kyoto before and after World War II."
+        },
+        {
+            "book_id": 16,
+            "book_name": "The Secret Life of Bees",
+            "author_name": "Sue Monk Kidd",
+            "price": 8.99,
+            "img_link": "/books_images/The Secret Life of Bees.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about a young girl's journey to uncover her mother's past in the 1960s South."
+        },
+        {
+            "book_id": 17,
+            "book_name": "A Game of Thrones",
+            "author_name": "George R.R. Martin",
+            "price": 9.99,
+            "img_link": "/books_images/A Game of Thrones.jpeg",
+            "book_type": "Fantasy",
+            "description": "Noble families vie for control of the Iron Throne in the kingdom of Westeros."
+        },
+        {
+            "book_id": 18,
+            "book_name": "The Kite Runner",
+            "author_name": "Khaled Hosseini",
+            "price": 9.99,
+            "img_link": "/books_images/The Kite Runner.jpeg",
+            "book_type": "Historical Fiction",
+            "description": "A story about friendship and redemption set against the backdrop of a changing Afghanistan."
+        },
+        {
+            "book_id": 19,
+            "book_name": "Dune",
+            "author_name": "Frank Herbert",
+            "price": 10.99,
+            "img_link": "/books_images/Dune.jpeg",
+            "book_type": "Science",
+            "description": "A complex tale of politics, religion, and power on the desert planet of Arrakis."
+        },
+        {
+            "book_id": 20,
+            "book_name": "The Help",
+            "author_name": "Kathryn Stockett",
+            "price": 8.99,
+            "img_link": "/books_images/The Help.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about African American maids working in white households in the 1960s South."
+        },
+        {
+            "book_id": 21,
+            "book_name": "The Chronicles of Narnia",
+            "author_name": "C.S. Lewis",
+            "price": 15.99,
+            "img_link": "/books_images/The Chronicles of Narnia.jpeg",
+            "book_type": "Fantasy",
+            "description": "A series of seven fantasy novels set in the fictional world of Narnia."
+        },
+        {
+            "book_id": 22,
+            "book_name": "The Immortal Life of Henrietta Lacks",
+            "author_name": "Rebecca Skloot",
+            "price": 10.99,
+            "img_link": "/books_images/The Immortal Life of Henrietta Lacks.jpeg",
+            "book_type": "Science",
+            "description": "The story of the woman whose cancer cells were used for scientific research without her knowledge."
+        },
+        {
+            "book_id": 23,
+            "book_name": "The Goldfinch",
+            "author_name": "Donna Tartt",
+            "price": 11.99,
+            "img_link": "/books_images/The Goldfinch.jpeg",
+            "book_type": "Fiction",
+            "description": "A young boy's life is changed forever after surviving an explosion at a museum."
+        },
+        {
+            "book_id": 24,
+            "book_name": "The Martian",
+            "author_name": "Andy Weir",
+            "price": 9.99,
+            "img_link": "/books_images/The Martian.jpeg",
+            "book_type": "Science",
+            "description": "An astronaut is stranded on Mars and must use his ingenuity to survive."
+        },
+        {
+            "book_id": 25,
+            "book_name": "The Picture of Dorian Gray",
+            "author_name": "Oscar Wilde",
+            "price": 8.99,
+            "img_link": "/books_images/The Picture of Dorian Gray.jpeg",
+            "book_type": "Classic",
+            "description": "A story about a man who remains young and beautiful while his portrait ages and shows his sins."
+        },
+        {
+            "book_id": 26,
+            "book_name": "Beloved",
+            "author_name": "Toni Morrison",
+            "price": 8.99,
+            "img_link": "/books_images/Beloved.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about a former enslaved woman who is haunted by the ghost of her dead daughter."
+        },
+        {
+            "book_id": 27,
+            "book_name": "Slaughterhouse-Five",
+            "author_name": "Kurt Vonnegut",
+            "price": 7.99,
+            "img_link": "/books_images/Slaughterhouse-Five.jpeg",
+            "book_type": "Fiction",
+            "description": "A novel about a soldier who becomes 'unstuck in time' and experiences different moments of his life out of order."
+        },
+        {
+            "book_id": 28,
+            "book_name": "A Wrinkle in Time",
+            "author_name": "Madeleine L'Engle",
+            "price": 6.99,
+            "img_link": "/books_images/A Wrinkle in Time.jpeg",
+            "book_type": "Science",
+            "description": "A young girl travels through space and time to rescue her father from an evil force."
+        },
+        {
+            "book_id": 29,
+            "book_name": "Jane Eyre",
+            "author_name": "Charlotte Brontë",
+            "price": 7.99,
+            "img_link": "/books_images/Jane Eyre.jpeg",
+            "book_type": "Classic",
+            "description": "A novel about a young woman's struggle for independence and love."
+        },
+        {
+            "book_id": 30,
+            "book_name": "Awaken the Giant Within",
+            "author_name": "Tony Robbins",
+            "price": 12.99,
+            "img_link": "/books_images/Awaken the Giant Within.jpeg",
+            "book_type": "Motivational",
+            "description": "Strategies and techniques to take control of your emotions, finances, relationships, and life."
+        },
+        {
+            "book_id": 31,
+            "book_name": "Wuthering Heights",
+            "author_name": "Emily Brontë",
+            "price": 7.99,
+            "img_link": "/books_images/Wuthering Heights.jpeg",
+            "book_type": "Classic",
+            "description": "A story of passionate and destructive love set on the Yorkshire moors."
+        },
+        {
+            "book_id": 32,
+            "book_name": "Frankenstein",
+            "author_name": "Mary Shelley",
+            "price": 6.99,
+            "img_link": "/books_images/Frankenstein.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about a scientist who creates a monstrous creature in an unorthodox experiment."
+        },
+        {
+            "book_id": 33,
+            "book_name": "The Hitchhiker's Guide to the Galaxy",
+            "author_name": "Douglas Adams",
+            "price": 8.99,
+            "img_link": "/books_images/The Hitchhiker's Guide to the Galaxy.jpeg",
+            "book_type": "Science",
+            "description": "A comedy about the adventures of an unwitting human and his alien friend as they travel through space."
+        },
+        {
+            "book_id": 34,
+            "book_name": "The Color Purple",
+            "author_name": "Alice Walker",
+            "price": 8.99,
+            "img_link": "/books_images/The Color Purple.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about African American women in the southern United States during the early 20th century."
+        },
+        {
+            "book_id": 35,
+            "book_name": "Les Misérables",
+            "author_name": "Victor Hugo",
+            "price": 10.99,
+            "img_link": "/books_images/Les Misérables.jpeg",
+            "book_type": "Fiction",
+            "description": "A novel about the struggles of several characters in post-revolutionary France."
+        },
+        {
+            "book_id": 36,
+            "book_name": "Think and Grow Rich",
+            "author_name": "Napoleon Hill",
+            "price": 8.99,
+            "img_link": "/books_images/Think and Grow Rich.jpeg",
+            "book_type": "Motivational",
+            "description": "A classic guide to success based on the principles of wealth and achievement."
+        },
+        {
+            "book_id": 37,
+            "book_name": "War and Peace",
+            "author_name": "Leo Tolstoy",
+            "price": 12.99,
+            "img_link": "/books_images/War and Peace.jpeg",
+            "book_type": "Fiction",
+            "description": "An epic novel about the French invasion of Russia and its impact on Russian society."
+        },
+        {
+            "book_id": 38,
+            "book_name": "Crime and Punishment",
+            "author_name": "Fyodor Dostoevsky",
+            "price": 9.99,
+            "img_link": "/books_images/Crime and Punishment.jpeg",
+            "book_type": "Fiction",
+            "description": "A novel about the mental anguish and moral dilemmas of an impoverished ex-student who murders a pawnbroker."
+        },
+        {
+            "book_id": 39,
+            "book_name": "Anna Karenina",
+            "author_name": "Leo Tolstoy",
+            "price": 8.99,
+            "img_link": "/books_images/Anna Karenina.jpeg",
+            "book_type": "Classic",
+            "description": "A tragic story of a married aristocrat and her affair with the affluent Count Vronsky."
+        },
+        {
+            "book_id": 40,
+            "book_name": "The Sun Also Rises",
+            "author_name": "Ernest Hemingway",
+            "price": 7.99,
+            "img_link": "/books_images/The Sun Also Rises.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about a group of American and British expatriates who travel from Paris to Spain."
+        },
+        {
+            "book_id": 40,
+            "book_name": "The Grapes of Wrath",
+            "author_name": "John Steinbeck",
+            "price": 8.99,
+            "img_link": "/books_images/The Grapes of Wrath.jpeg",
+            "book_type": "Fiction",
+            "description": "A novel about the struggles of a poor family from Oklahoma who travel to California during the Great Depression."
+        },
+        {
+            "book_id": 41,
+            "book_name": "The Old Man and the Sea",
+            "author_name": "Ernest Hemingway",
+            "price": 6.99,
+            "img_link": "/books_images/The Old Man and the Sea.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about an aging Cuban fisherman who struggles to catch a giant marlin."
+        },
+        {
+            "book_id": 42,
+            "book_name": "Don Quixote",
+            "author_name": "Miguel de Cervantes",
+            "price": 10.99,
+            "img_link": "/books_images/Don Quixote.jpeg",
+            "book_type": "Classic",
+            "description": "A story about a man who becomes obsessed with chivalry and sets out on a series of misadventures."
+        },
+        {
+            "book_id": 43,
+            "book_name": "Lolita",
+            "author_name": "Vladimir Nabokov",
+            "price": 9.99,
+            "img_link": "/books_images/Lolita.jpeg",
+            "book_type": "Fiction",
+            "description": "A controversial novel about a middle-aged man who becomes obsessed with a twelve-year-old girl."
+        },
+        {
+            "book_id": 44,
+            "book_name": "Of Mice and Men",
+            "author_name": "John Steinbeck",
+            "price": 7.99,
+            "img_link": "/books_images/Of Mice and Men.jpeg",
+            "book_type": "Fiction",
+            "description": "A story about two displaced migrant ranch workers who move from place to place in search of new job opportunities during the Great Depression."
+        },
+        {
+            "book_id": 45,
+            "book_name": "The Adventures of Huckleberry Finn",
+            "author_name": "Mark Twain",
+            "price": 6.99,
+            "img_link": "/books_images/The Adventures of Huckleberry Finn.jpeg",
+            "book_type": "Classic",
+            "description": "A novel about the adventures of a young boy and a runaway slave as they travel down the Mississippi River."
+        },
+        {
+            "book_id": 46,
+            "book_name": "Atomic Habits",
+            "author_name": "James Clear",
+            "price": 16.99,
+            "img_link": "/books_images/An Easy & Proven Way to Build Good Habits & Break Bad Ones.jpeg",
+            "book_type": "Motivational",
+            "description": "A guide to transforming your life by making small changes in your daily habits."
+        },
+        {
+            "book_id": 47,
+            "book_name": "The Great Expectations",
+            "author_name": "Charles Dickens",
+            "price": 8.99,
+            "img_link": "/books_images/The Great Expectations.jpeg",
+            "book_type": "Classic",
+            "description": "A story about an orphan named Pip who dreams of becoming a gentleman and receiving a mysterious fortune."
+        },
+        {
+            "book_id": 48,
+            "book_name": "Middlemarch",
+            "author_name": "George Eliot",
+            "price": 9.99,
+            "img_link": "/books_images/Middlemarch.jpeg",
+            "book_type": "Classic",
+            "description": "A novel about the lives of the residents of a fictional English town in the early 19th century."
+        },
+        {
+            "book_id": 49,
+            "book_name": "Gone with the Wind",
+            "author_name": "Margaret Mitchell",
+            "price": 11.99,
+            "img_link": "/books_images/Gone with the Wind.jpeg",
+            "book_type": "Fiction",
+            "description": "A novel about the life of Scarlett O'Hara during the American Civil War and Reconstruction Era."
+        },
+        {
+            "book_id": 50,
+            "book_name": "The Power of Positive Thinking",
+            "author_name": "Norman Vincent Peale",
+            "price": 10.99,
+            "img_link": "/books_images/The Power of Positive Thinking.jpeg",
+            "book_type": "Motivational",
+            "description": "A guide to achieving a successful and fulfilled life through positive thinking."
+        },
+        {
+            "book_id": 51,
+            "book_name": "The 7 Habits of Highly Effective People",
+            "author_name": "Stephen R. Covey",
+            "price": 11.99,
+            "img_link": "/books_images/The 7 Habits of Highly Effective People.jpeg",
+            "book_type": "Motivational",
+            "description": "A framework for personal and professional effectiveness through seven key habits."
+        },
+        {
+            "book_id": 52,
+            "book_name": "You Are a Badass",
+            "author_name": "Jen Sincero",
+            "price": 9.99,
+            "img_link": "/books_images/You Are a Badass.jpeg",
+            "book_type": "Motivational",
+            "description": "How to stop doubting your greatness and start living an awesome life."
+        },
+        {
+            "book_id": 53,
+            "book_name": "The Magic of Thinking Big",
+            "author_name": "David J. Schwartz",
+            "price": 10.99,
+            "img_link": "/books_images/The Magic of Thinking Big.jpeg",
+            "book_type": "Motivational",
+            "description": "Proven techniques to achieve success and live a fuller, happier life."
+        },
+        {
+            "book_id": 54,
+            "book_name": "The Four Agreements",
+            "author_name": "Don Miguel Ruiz",
+            "price": 9.99,
+            "img_link": "/books_images/The Four Agreements.jpeg",
+            "book_type": "Motivational",
+            "description": "A practical guide to personal freedom and a new way of living based on ancient Toltec wisdom."
+        },
+        {
+            "book_id": 55,
+            "book_name": "The Alchemist",
+            "author_name": "Paulo Coelho",
+            "price": 13.99,
+            "img_link": "/books_images/The Alchemist.jpeg",
+            "book_type": "Motivational",
+            "description": "A novel about following your dreams and listening to your heart."
+        },
+        {
+            "book_id": 56,
+            "book_name": "Grit: The Power of Passion and Perseverance",
+            "author_name": "Angela Duckworth",
+            "price": 13.99,
+            "img_link": "/books_images/The Power of Passion and Perseverance.jpeg",
+            "book_type": "Motivational",
+            "description": "A psychologist's look at why talent alone doesn't guarantee success, and how passion and perseverance can help achieve long-term goals."
+        }
+    ]
+}

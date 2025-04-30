@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/header.css">
+    <title>Header</title>
+</head>
+
+<body>
+    <div id="header-line-1">
+        <a href="/">
+            <div class="logo">
+                <img src="/images/book-logo.png" alt="Logo">
+                <h2>KitabCenter.</h2>
+            </div>
+        </a>
+        <div id="header-search">
+            <input type="text" placeholder="Search">
+            <div id="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div id="login-cart">
+            <% if(userLoggedIn==false){ %>
+                <div id="login-signup">
+                    <a href="/signin">Login</a>
+                    <a href="/signup">Signup</a>
+                </div>
+                <% } %>
+                    <% if(userLoggedIn){ %>
+                        <h3>Hey <%= user.name %>!</h3>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="/cart">
+                            <h3>Cart</h3>
+                        </a>
+                        <a id="logout-btn" href="/logout">Logout</a>
+                        <% } %>
+        </div>
+    </div>
+    <div id="header-line-2">
+        <div id="options">
+            <a href="/">Home</a><a href="allBooks">All Books</a><a href="/classic">Classic</a><a
+                href="/science">Science</a><a href="/fiction">Fiction</a><a href="/motivational">Motivational</a><a
+                href="/fantasy">Fantasy</a><a href="/thriller">Thriller</a><a href="#">Children</a><a href="#">Top
+                Deals</a>
+        </div>
+    </div>
+</body>
+
+</html>

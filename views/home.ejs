@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Kitab Center</title>
+</head>
+
+<header>
+    <%- include('header', { userLoggedIn: userLoggedIn, user: user}) %>
+</header>
+
+<body>
+    <div id="home-bg">
+        <img src="/images/home_bg.jpg" alt="Home bg">
+        <div id="home-bg-desc">
+            <h2>Best Collection Of New Books</h2>
+            <button id="home-shop-btn">Shop Now</button>
+        </div>
+    </div>
+    <div id="home-container-1">
+        <h1>Featured</h1>
+        <div id="books-slide-1">
+            <% for(let i=0;i<50;i=i+12){ %>
+                <div id="book-box">
+                    <img src="<%=books[i].img_link %>" alt="Book Cover">
+                    <a href="/book-info?id=<%=books[i].book_id %>">
+                        <h4>
+                            <%=books[i].book_name %>
+                        </h4>
+                    </a>
+                    <h5>By: <%=books[i].author_name %>
+                    </h5>
+                    <h3>$<%=books[i].price%>
+                    </h3>
+                </div>
+                <% } %>
+        </div>
+        <div id="books-slide-2">
+            <% for(let i=3;i<56;i=i+11){ %>
+                <div id="book-box">
+                    <img src="<%=books[i].img_link %>" alt="Book Cover">
+                    <a href="/book-info?id=<%=books[i].book_id %>">
+                        <h4>
+                            <%=books[i].book_name %>
+                        </h4>
+                    </a>
+                    <h5>By: <%=books[i].author_name %>
+                    </h5>
+                    <h3>$<%=books[i].price%>
+                    </h3>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <div id="home-container-2">
+        <h1>Our Products</h1>
+        <p>Browse the collection of our best selling and top interresting products.</p>
+        <div id="home-container-catogories">
+            <ul>
+                <li id="New-Arrival" onclick="showNewArrivals()">
+                    New Arrival
+                </li>
+
+                <li id="On-Sale" onclick='<% 
+        let onSaleHTML = "";
+        for (let i = 20; i < 45; i = i + 6) {
+            onSaleHTML += `<div id="book-box">
+                            <img src="${books[i].img_link}" alt="Book Cover">
+                            <a href="#">
+                                <h4>${books[i].book_name}</h4>
+                            </a>
+                            <h5>By: ${books[i].author_name}</h5>
+                            <h3>$${books[i].price}</h3>
+                        </div>`;
+        }
+    %><%= `document.getElementById("books-slide-3").innerHTML = \`${onSaleHTML}\`;` %>'>
+                    On Sale
+                </li>
+                <li id="Featured" onclick='<% 
+        let featuredHTML = "";
+        for (let i = 11; i < 35; i = i + 5) {
+            featuredHTML += `<div id="book-box">
+                                <img src="${books[i].img_link}" alt="Book Cover">
+                                <a href="#">
+                                    <h4>${books[i].book_name}</h4>
+                                </a>
+                                <h5>By: ${books[i].author_name}</h5>
+                                <h3>$${books[i].price}</h3>
+                            </div>`;
+        }
+    %><%= `document.getElementById("books-slide-3").innerHTML = \`${featuredHTML}\`;` %>'>
+                    Featured Products
+                </li>
+            </ul>
+        </div>
+        <div id="books-slide-3">
+            <% for(let i=3;i<35;i=i+7){ %>
+                <div id="book-box">
+                    <img src="<%=books[i].img_link %>" alt="Book Cover">
+                    <a href="#">
+                        <h4>
+                            <%=books[i].book_name %>
+                        </h4>
+                    </a>
+                    <h5>By: <%=books[i].author_name %>
+                    </h5>
+                    <h3>$<%=books[i].price%>
+                    </h3>
+                </div>
+                <% } %>
+        </div>
+
+    </div>
+</body>
+<script src="/script.js"></script>
+
+<footer>
+    <%- include('footer.ejs') %>
+</footer>
+
+</html>

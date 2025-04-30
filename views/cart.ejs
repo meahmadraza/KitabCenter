@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cart.css">
+    <title>Cart</title>
+</head>
+
+<header>
+    <%- include('header', { userLoggedIn: userLoggedIn, user: user}) %>
+</header>
+
+<body>
+    <div id="cart-conatiner">
+        <div id="cart-books-div">
+            <% Object.keys(cart).forEach(email=> { %>
+                <% if (email===user.username) { %>
+                    <% cart[email].forEach(item=> { %>
+                        <% const id=item.bookId - 1; %>
+                            <div class="cart-item-info">
+                                <img src="<%= books[id].img_link %>" alt="Book">
+                                <div>
+                                    <h2>
+                                        <%= books[id].book_name %>
+                                    </h2>
+                                    <h5>By: <%= books[id].author_name %>
+                                    </h5>
+                                </div>
+                                <div id="price-div">
+                                    <h3>$<%= books[id].price %>
+                                    </h3>
+                                    <a href="/delete-from-cart?id=<%=id+1 %>"><i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            </div>
+                            <% }); %>
+                                <% } %>
+                                    <% }); %>
+        </div>
+        <div id="cart-order-div"></div>
+
+    </div>
+
+</body>
+
+<footer>
+    <%- include('footer.ejs') %>
+</footer>
+
+</html>

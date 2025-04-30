@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/classicBooks.css">
+    <title>Books</title>
+</head>
+
+<header>
+    <%- include('header', { userLoggedIn: userLoggedIn }) %>
+</header>
+
+
+<body>
+    <div id="container">
+        <h1>Thriller</h1>
+        <div id="books-div">
+            <div id="books-slide-1">
+                <% for (let i=0;i < books.length; i++) { %>
+                    <% if (books[i].book_type=="Thriller" ) { %>
+                        <div id="book-box">
+                            <img src="<%= books[i].img_link %>" alt="Book Cover">
+                            <a href="/book-info?id=<%=books[i].book_id %>">
+                                <h4>
+                                    <%= books[i].book_name %>
+                                </h4>
+                            </a>
+                            <h5>By: <%= books[i].author_name %>
+                            </h5>
+                            <h3>$<%= books[i].price %>
+                            </h3>
+                        </div>
+                        <% } %>
+                            <% } %>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    <%- include('footer.ejs') %>
+</footer>
+
+</html>

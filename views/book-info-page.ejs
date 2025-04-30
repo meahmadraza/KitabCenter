@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bookInfo.css">
+    <title>Book detail</title>
+</head>
+
+<header>
+    <%- include('header', { userLoggedIn: userLoggedIn }) %>
+</header>
+
+<body>
+    <div id="book-info-container">
+        <div id="book-info-div">
+            <img src="<%=books[id].img_link %>" alt="">
+            <div id="book-detail">
+                <h1>
+                    <%=books[id].book_name %>
+                </h1>
+                <h5>By: <%=books[id].author_name %>
+                </h5>
+                <h3>$<%=books[id].price %>
+                </h3>
+                <p>
+                    <%=books[id].description %>
+                </p>
+                <form action="addToCart" method="POST">
+                    <input type="hidden" name="id" value="<%=id+1 %>">
+                    <input type="submit" id="add-to-cart-btn" value="Add to cart">
+                </form>
+                <div id="cartPopup" class="popup">
+                    <p>The item is added to cart</p>
+                </div>
+            </div>
+        </div>
+        <div id="others-related-books">
+            <% for(let i=1;i<=4 && id+i < 56;i++){ %>
+                <a href="/book-info?id=<%=books[id+i].book_id %>">
+                    <div id="related-book-div">
+                        <img src="<%=books[id+i].img_link %>" alt="">
+                        <div>
+                            <h3>
+                                <%=books[id+i].book_name %>
+                            </h3>
+                            <h5>By: <%=books[id+i].author_name %>
+                            </h5>
+                            <h4>$<%=books[id+i].price %>
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+
+    </div>
+
+</body>
+<script src="/script.js"></script>
+
+<footer>
+    <%- include('footer.ejs') %>
+</footer>
+
+</html>
